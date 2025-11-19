@@ -1,0 +1,183 @@
+/* =========================================
+   GLOBAL LIGHT THEME
+========================================= */
+
+body {
+  background: #FFFDF5; /* soft yellowish background */
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.navbar {
+  background: #ffffff !important;
+  border-bottom: 1px solid #eee;
+}
+
+/* Inputs */
+.form-control, textarea {
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+}
+
+/* =========================================
+   LEFT PANEL CARD (app panel)
+========================================= */
+
+.app-panel {
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #efefef;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+}
+
+/* =========================================
+   NOTE CARDS (colorful sticky notes)
+========================================= */
+
+.note-card {
+  border-radius: 12px;
+  padding: 6px;
+  border: 2px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 16px rgba(0,0,0,0.1);
+}
+
+.note-card .card-body {
+  padding-bottom: 0.5rem;
+}
+
+/* Tags */
+.note-card .badge {
+  background: #555 !important;
+  font-size: 0.65rem;
+  opacity: 0.85;
+}
+
+/* Edit/Delete buttons */
+.note-card button {
+  border-radius: 6px;
+}
+
+/* =========================================
+   COLOR PICKER CIRCLES
+========================================= */
+
+.color-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.color-circle:hover {
+  transform: scale(1.1);
+}
+
+.color-circle.selected {
+  border-color: #000;
+}
+
+/* =========================================
+   SEARCH BAR
+========================================= */
+
+#searchInput {
+  border-radius: 20px;
+  padding-left: 14px;
+}
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+body.dark-mode {
+  background: #181818 !important;
+  color: #f5f5f5;
+}
+
+body.dark-mode .navbar {
+  background: #101010 !important;
+  border-bottom: 1px solid #333;
+}
+
+/* App panel dark */
+body.dark-mode .app-panel {
+  background: #222;
+  border-color: #444;
+  color: #f5f5f5;
+}
+
+/* Inputs dark */
+body.dark-mode .form-control,
+body.dark-mode textarea {
+  background: #2a2a2a;
+  color: #f5f5f5;
+  border-color: #555;
+}
+
+body.dark-mode .form-control::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #aaa;
+}
+
+/* Search bar dark */
+body.dark-mode #searchInput {
+  background: #2a2a2a;
+  color: #fff;
+  border-color: #555;
+}
+
+/* Note cards: keep pastel BUT readable */
+body.dark-mode .note-card {
+  border-color: #444;
+}
+
+/* Text on note cards stays dark for readability */
+.note-card,
+.note-card .card-title,
+.note-card .card-text {
+  color: #222 !important;
+}
+
+/* Buttons */
+body.dark-mode .btn-outline-danger {
+  border-color: #ff9c9c;
+  color: #ff9c9c;
+}
+
+body.dark-mode .btn-outline-danger:hover {
+  background: #ff9c9c;
+  color: #000;
+}
+
+/* Dark mode color circle border */
+body.dark-mode .color-circle.selected {
+  border-color: #fff;
+}
+
+/* =========================================
+   SMALL UI DETAILS
+========================================= */
+
+h5 {
+  font-weight: 600;
+}
+
+button {
+  border-radius: 8px !important;
+}
+
+#noteMsg {
+  font-weight: 600;
+}
+
+.header1{
+  color: #008B8B;
+}
